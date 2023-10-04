@@ -1,7 +1,16 @@
-#include <stddef.h>
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/04 11:54:28 by yabrodri          #+#    #+#             */
+/*   Updated: 2023/10/04 11:54:31 by yabrodri         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 char	**ft_split(const char *s, char c)
 {
