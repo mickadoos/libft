@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isspace(char c)
 {
 	return (c == ' ' || (c >= '\t' && c <= '\r'));
@@ -44,5 +46,5 @@ int	ft_atoi(const char *str)
 	if (sign == 0)
 		return (result);
 	else
-		return (result * -1);
+		return (result * - 1);
 }
