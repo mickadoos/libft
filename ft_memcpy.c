@@ -6,7 +6,7 @@
 /*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 11:52:28 by yabrodri          #+#    #+#             */
-/*   Updated: 2023/10/04 11:52:31 by yabrodri         ###   ########.fr       */
+/*   Updated: 2023/10/04 12:24:04 by yabrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*p_src;
 	unsigned char	*p_dest;
 
