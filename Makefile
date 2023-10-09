@@ -31,6 +31,7 @@ SOURCES	= ft_isalpha.c \
 		  ft_bzero.c \
 		  ft_memcmp.c \
 		  ft_strlcpy.c \
+		  ft_strlcat.c \
 		  ft_calloc.c \
 		  ft_strdup.c \
 		  ft_substr.c \
