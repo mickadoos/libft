@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 15:54:57 by yabrodri          #+#    #+#             */
-/*   Updated: 2023/10/09 16:01:23 by yabrodri         ###   ########.fr       */
+/*   Created: 2023/10/09 16:09:02 by yabrodri          #+#    #+#             */
+/*   Updated: 2023/10/09 16:33:31 by yabrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
-	size_t	j;
-	size_t	dest_len;
-	size_t	src_len;
+	char	find;
+	int		i;
 
-	dest_len = ft_strlen(dest);
-	src_len = ft_strlen(src);
+	find = (unsigned char)c;
 	i = 0;
-	j = dest_len;
-	if (dest_len < size - 1 && size > 0)
+	while (s[i])
 	{
-		while (src[i] && dest_len + i < size - 1)
-			dest[j++] = src[i++];
-		dest[j] = '\0';
+		i++;
 	}
-	if (dest_len >= size)
-		dest_len = size;
-	return (dest_len + src_len);
+	while (i >= 0)
+	{
+		if (s[i] == find)
+			return ((char *)s + i);
+		i--;
+	}
+	return (NULL);
 }
