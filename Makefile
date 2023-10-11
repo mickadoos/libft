@@ -6,7 +6,7 @@
 #    By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 10:56:17 by yabrodri          #+#    #+#              #
-#    Updated: 2023/10/09 17:44:40 by yabrodri         ###   ########.fr        #
+#    Updated: 2023/10/11 17:19:38 by yabrodri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,8 @@ SOURCES	= ft_isalpha.c \
 		  ft_putnbr_fd.c \
 		  ft_strmapi.c \
 		  ft_striteri.c \
+		  ft_itoa.c \
+		  ft_split.c \
 
 OBJECTS = ${SOURCES:.c=.o}
 

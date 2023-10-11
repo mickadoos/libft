@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_split_main.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 17:05:00 by yabrodri          #+#    #+#             */
-/*   Updated: 2023/10/10 12:02:47 by yabrodri         ###   ########.fr       */
+/*   Created: 2023/10/11 15:45:21 by yabrodri          #+#    #+#             */
+/*   Updated: 2023/10/11 17:46:06 by yabrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
+#include <stdio.h>
 
-void	ft_putnbr_fd(int n, int fd)
+int	main(int argc, char *argv[])
 {
-	if (n == -2147483648)
+	if (argc > 2)
 	{
-		write(fd, "-2147483648", 11);
-		return;
-	}
-	if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		n = -n;
-	}
-	if (n > 9)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10, fd);
+		char	**arr;
+		unsigned int	i;
+
+		i = 0;
+		printf("Arg 1: %s\n", argv[1]);
+		printf("Arg 2: %s\n", argv[2]);
+		arr = ft_split(argv[1], argv[2][0]);
+		while (arr[i])
+		{
+			printf("Word %d: %s\n", i, arr[i]);
+			i++;
+		}
 	}
 	else
-	{
-		ft_putchar_fd((char)(n + '0'), fd);
-	}
+		printf("No arguments passed.");
+	return (0);
 }

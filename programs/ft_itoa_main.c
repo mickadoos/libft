@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_itoa_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 17:05:00 by yabrodri          #+#    #+#             */
-/*   Updated: 2023/10/10 12:02:47 by yabrodri         ###   ########.fr       */
+/*   Created: 2023/10/10 16:59:06 by yabrodri          #+#    #+#             */
+/*   Updated: 2023/10/10 19:17:52 by yabrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
+#include <stdio.h>
 
-void	ft_putnbr_fd(int n, int fd)
+char	*ft_itoa(int n);
+int		ft_atoi(const char *str);
+
+int	main(int argc, char *argv[])
 {
-	if (n == -2147483648)
+	if (argc > 1)
 	{
-		write(fd, "-2147483648", 11);
-		return;
-	}
-	if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		n = -n;
-	}
-	if (n > 9)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10, fd);
+		int	num = ft_atoi(argv[1]);
+		char	*str = ft_itoa(num);
+
+		printf("Argument 1: %d\n", num);
+		printf("Result itoa: %s\n", str);
 	}
 	else
-	{
-		ft_putchar_fd((char)(n + '0'), fd);
-	}
+		printf("No arguments passed");
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 13:04:01 by yabrodri          #+#    #+#             */
-/*   Updated: 2023/10/09 17:59:31 by yabrodri         ###   ########.fr       */
+/*   Updated: 2023/10/11 17:46:18 by yabrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*ft_itoa(int n);
+char	**ft_split(const char *s, char c);
 
 #endif
