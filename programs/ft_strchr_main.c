@@ -10,17 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 #include <stdio.h>
 #include <string.h>
-
-char	*ft_strchr(const char *s, int c);
 
 int	main(int argc, char *argv[])
 {
 	if (argc > 1)
 	{
-		printf("ft_strchr of argument: %s\n", ft_strchr(argv[1], 'c'));
-		printf("strchr of argument: %s\n", strchr(argv[1], 'c'));
+		printf("ft_strchr of argument: %s\n", ft_strchr(argv[1], argv[2][0]));
+		printf("strchr of argument: %s\n", strchr(argv[1], argv[2][0]));
 	}
 	else
 		printf("No arguments passed.\n");

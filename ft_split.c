@@ -92,5 +92,5 @@ char	**ft_split(const char *s, char c)
 	if (!str_arr)
 		return (NULL);
 	str_arr = getwords(s, c, str_arr);
-	return (str_arr); 
+	return (str_arr);
 }

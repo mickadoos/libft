@@ -10,12 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
 #include <stdlib.h>
-
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int	main(int argc, char *argv[])
 {

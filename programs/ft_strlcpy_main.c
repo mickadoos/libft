@@ -1,9 +1,7 @@
+#include "../libft.h"
 #include <stdio.h>
 #include <string.h>
-#include <bsd/string.h>
 #include <stdlib.h>
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 
 int	main(int argc, char *argv[])
 {
@@ -17,7 +15,7 @@ int	main(int argc, char *argv[])
 		printf("Result of ft_strlcpy: %lu\n", ft_strlcpy(arg2, arg1, (size_t)size));
 		printf("Result of ft_strlcpy arg2: %s\n", arg2);
 		printf("Result of strlcpy: %lu\n", strlcpy(arg4, arg3, (size_t)size));
-		printf("Result of ft_strlcpy arg4: %s\n", arg4);
+		printf("Result of strlcpy arg4: %s\n", arg4);
 	}
 	else
 		printf("No arguments passed.");

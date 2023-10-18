@@ -10,17 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 #include <stdio.h>
 #include <string.h>
-
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-int		ft_atoi(const char *str);
 
 int	main(int argc, char *argv[])
 {
 	if (argc > 3)
 	{
-		printf("f_strnstr:%s", ft_strnstr(argv[1], argv[2], ft_atoi(argv[3])));
+		printf("ft_strnstr:%s", ft_strnstr(argv[1], argv[2], ft_atoi(argv[3])));
 		printf("\nstrnstr:%s\n", strnstr(argv[1], argv[2], ft_atoi(argv[3])));
 	}
 	else

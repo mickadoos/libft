@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 #include <stdio.h>
 #include <ctype.h>
-
-int	ft_tolower(int c);
 
 int	main(int argc, char *argv[])
 {
 	if (argc > 1)
 	{
+		printf("Char argument: %d\n", argv[1][0]);
 		printf("Result ft_tolower: %d\n", ft_tolower(argv[1][0]));
 		printf("Result tolower: %d\n", tolower(argv[1][0]));
 	}

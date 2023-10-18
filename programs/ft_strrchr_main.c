@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strrchr_main.c                                   :+:      :+:    :+:  */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yabrodri <yabrodri@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 17:05:00 by yabrodri          #+#    #+#             */
-/*   Updated: 2023/10/10 12:02:47 by yabrodri         ###   ########.fr       */
+/*   Created: 2023/09/18 13:34:53 by yabrodri          #+#    #+#             */
+/*   Updated: 2023/09/19 18:10:06 by yabrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
+#include <stdio.h>
+#include <string.h>
 
-void	ft_putnbr_fd(int n, int fd)
+int	main(int argc, char *argv[])
 {
-	if (n == -2147483648)
+	if (argc > 1)
 	{
-		write(fd, "-2147483648", 11);
-		return ;
-	}
-	if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		n = -n;
-	}
-	if (n > 9)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10, fd);
+		printf("ft_strrchr of argument: %s\n", ft_strrchr(argv[1], argv[2][0]));
+		printf("strrchr of argument: %s\n", strrchr(argv[1], argv[2][0]));
 	}
 	else
-	{
-		ft_putchar_fd((char)(n + '0'), fd);
-	}
+		printf("No arguments passed.\n");
+	return (0);
 }

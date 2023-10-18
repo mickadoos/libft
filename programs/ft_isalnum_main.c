@@ -10,10 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 #include <stdio.h>
 #include <ctype.h>
-
-int	ft_isalnum(int c);
 
 int	main(int argc, char *argv[])
 {

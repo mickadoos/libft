@@ -1,7 +1,6 @@
+#include "../libft.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 int	main(int argc, char *argv[])
 {

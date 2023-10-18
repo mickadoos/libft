@@ -1,8 +1,7 @@
+#include "../libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-void	*ft_memmove(void *dest, const void *src, size_t n);
 
 int     main(int argc, char *argv[])
 {

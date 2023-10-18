@@ -1,7 +1,6 @@
+#include "../libft.h"
 #include <stdio.h>
 #include <string.h>
-
-char	*ft_strdup(const char *s);
 
 int	main(int argc, char *argv[])
 {

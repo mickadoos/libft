@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s)
 {
-	char		*strup;
+	char			*strup;
 	unsigned int	i;
 
 	strup = (char *)malloc(ft_strlen(s) + 1);

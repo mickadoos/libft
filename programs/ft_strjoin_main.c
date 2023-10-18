@@ -1,6 +1,5 @@
+#include "../libft.h"
 #include <stdio.h>
-
-char	*ft_strjoin(const char *s1, const char *s2);
 
 int	main(int argc, char *argv[])
 {

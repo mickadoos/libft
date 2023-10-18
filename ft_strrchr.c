@@ -20,9 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	find = (unsigned char)c;
 	i = 0;
 	while (s[i])
-	{
 		i++;
-	}
 	while (i >= 0)
 	{
 		if (s[i] == find)

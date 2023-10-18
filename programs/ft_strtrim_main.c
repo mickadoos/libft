@@ -1,7 +1,5 @@
+#include "../libft.h"
 #include <stdio.h>
-
-size_t	ft_strlen(const char *s);
-char	*ft_strtrim(const char *s1, const char *set);
 
 int	main(int argc, char *argv[])
 {
