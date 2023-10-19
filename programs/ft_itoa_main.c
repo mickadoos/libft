@@ -13,9 +13,6 @@
 #include "../libft.h"
 #include <stdio.h>
 
-char	*ft_itoa(int n);
-int		ft_atoi(const char *str);
-
 int	main(int argc, char *argv[])
 {
 	if (argc > 1)

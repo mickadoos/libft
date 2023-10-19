@@ -7,8 +7,9 @@ int	main(int argc, char *argv[])
 {
 	if (argc > 1)
 	{
-		char	*ma;
-		ma = ft_calloc(ft_atoi(argv[1]),ft_atoi(argv[2]));
+		char	*ma = argv[1];
+		printf("Arg: %s\n", ma);
+		ma = ft_calloc(ft_atoi(argv[2]),ft_atoi(argv[3]));
 		printf("return: %s\n", ma);
 	}
 	else
